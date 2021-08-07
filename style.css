@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html,
+body,
+#container {
+  height: 100vh;
+}
+
+body {
+  font-size: 12px;
+  font-family: "Red Hat Text", sans-serif;
+}
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#container {
+  position: relative;
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  /*modife l'arriere plan ici */
+
+  /*Ou tu me une autre adresse*/
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 375px) {
+  #container {
+    max-width: 375px;
+    display: block;
+  }
+}
+#container #page {
+  width: 960px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+  color: black;
+}
+#page .test {
+  font-size: 30px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+@media screen and (max-width: 375px) {
+  #container #page {
+    max-width: 375px;
+    display: block;
+  }
+}
+#container #page h1 {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: hsl(0, 0%, 0%);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  word-spacing: 8px;
+  padding: 60px;
+  text-align: center;
+}
+#container #page .countdown-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 375px) {
+  #container #page .countdown-container {
+    width: 100%;
+  }
+}
+#container #page .countdown-container > div {
+  text-align: center;
+  /* border: 1px solid white; */
+}
+#container #page .countdown-container div h2 {
+  width: 140px;
+  padding: 25px;
+  font-size: 4em;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 15px;
+  background-color: hsl(22, 93%, 45%);
+  border-radius: 6px;
+  text-align: center;
+}
+@media screen and (max-width: 375px) {
+  #container #page .countdown-container div h2 {
+    width: 80px;
+    padding: 16px;
+    font-size: 2em;
+    font-weight: 700;
+  }
+}
+#container #page .countdown-container div p {
+  font-size: 0.9em;
+  font-weight: 700;
+  color: hsl(237, 18%, 59%);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+#container #page .social {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* border: 1px solid white; */
+  text-align: center;
+}
+#container #page .social a {
+  display: inline-block;
+  padding: 10px 15px;
+}
+#container #page .social a i {
+  display: block;
+  color: hsl(237, 18%, 59%);
+  font-size: 1.7em;
+}
+#container #page .social a:hover i {
+  color: hsl(0, 0%, 100%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
